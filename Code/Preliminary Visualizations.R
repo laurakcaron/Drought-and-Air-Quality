@@ -1,6 +1,6 @@
 ###################################################################################################
 #                              Preliminary Visualizations
-#         Drought, Dust Storms, and Health and Agricultural Impacts in South Africa
+#    From Drought to Dust: Agriculture and Health Consequences of Dry Spells in South Africa
 #                                   Laura Caron
 #                                 December 23, 2021
 ##################################################################################################
@@ -44,3 +44,4 @@ parcels <- parcels %>% mutate(farm=(X_Croplands > 0))
 parcels.sp <-  as(parcels, 'Spatial')
 #write_sf(parcels, "QGIS Analysis/Zonal statistics/merged.gpkg")
 writeOGR(parcels.sp, "QGIS Analysis/Zonal statistics/merged.gpkg", driver="GPKG", layer="merged")
+
